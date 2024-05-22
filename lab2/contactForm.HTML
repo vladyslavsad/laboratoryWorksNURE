@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакт</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="grid.CSS" />
+  </head>
+  <body>
+    <header>
+      <div class="navigeteMenu">
+        <nav>
+          <a style="color: aliceblue" href="index.html">Головна</a>
+          <a style="color: aliceblue" href>Контакт</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="formPage">
+        <h1 class="hover-main-title-formPage" style="padding-bottom: 30px">
+          Контактна форма
+        </h1>
+        <form>
+          <div class="grid-form-container">
+            <div class="item-name-label">
+              <label for="name">Ім'я:</label>
+            </div>
+            <div class="item-name-input">
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="item-email-label">
+              <label for="email">Email:</label>
+            </div>
+            <div class="item-email-input">
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="item-phone-label">
+              <label for="phone">Телефон:</label>
+            </div>
+            <div class="item-phone-input">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{10}"
+                required
+              />
+            </div>
+
+            <div class="item-meeting-time-label">
+              <label for="meeting-time">Запропонуйте час для зустрічі:</label>
+            </div>
+            <div class="item-meeting-time-input">
+              <input
+                type="datetime-local"
+                id="meeting-time"
+                name="meeting-time"
+                required
+              />
+            </div>
+
+            <div class="item-website-label">
+              <label for="website">Ваш сайт:</label>
+            </div>
+            <div class="item-website-input">
+              <input type="url" id="website" name="website" />
+            </div>
+
+            <div class="submit-button">
+              <input
+                style="margin: 10px 0 0 0"
+                type="submit"
+                value="Відправити"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <div class="footerForm">
+      <p>&copy; 2024 Ваше Ім'я. Всі права захищені.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,292 @@
+.item-name-label {
+  grid-area: nameField-label;
+  justify-self: end;
+}
+.item-name-input {
+  grid-area: nameField-input;
+}
+
+.item-email-label {
+  grid-area: emailField-label;
+  justify-self: end;
+}
+.item-email-input {
+  grid-area: emailField-input;
+}
+.item-phone-label {
+  grid-area: phoneField-label;
+  justify-self: end;
+}
+.item-phone-input {
+  grid-area: phoneField-input;
+}
+.item-meeting-time-label {
+  grid-area: apointmentField-label;
+  justify-self: end;
+}
+.item-meeting-time-input {
+  grid-area: apointmentField-input;
+}
+.item-website-label {
+  grid-area: websiteField-label;
+  justify-self: end;
+}
+.item-website-input {
+  grid-area: websiteField-input;
+}
+.submit-button {
+  grid-area: buttonControl;
+  justify-self: center;
+}
+
+/* Стили для мобильных телефонов */
+@media (max-width: 431px) {
+  .item-meeting-time-label {
+    position: relative;
+    top: 20px; /* Смещает элемент вниз на 20px от его обычного положения */
+  }
+  .formPage {
+    margin: 80px 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+  }
+  .grid-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 30px);
+    grid-template-areas:
+      "nameField-label nameField-input"
+      " emailField-label emailField-input"
+      "phoneField-label phoneField-input"
+      " websiteField-label websiteField-input "
+      "apointmentField-label  apointmentField-input "
+      ". buttonControl";
+    justify-content: space-around;
+  }
+}
+
+/* Стили для портретной ориентации планшетов */
+@media (min-width: 600px) {
+  .formPage {
+    margin: 80px 80px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+  }
+  .grid-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 30px);
+    grid-template-areas:
+      "nameField-label nameField-input"
+      " emailField-label emailField-input"
+      "phoneField-label phoneField-input"
+      " websiteField-label websiteField-input "
+      "apointmentField-label  apointmentField-input "
+      ". buttonControl";
+    justify-content: space-around;
+  }
+}
+
+/* Стили для ландшафтной ориентации планшетов и малых десктопов */
+@media (min-width: 768px) {
+  .formPage {
+    margin: 80px 100px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+  }
+  .grid-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 30px);
+    grid-template-areas:
+      "nameField-label nameField-input"
+      " emailField-label emailField-input"
+      "phoneField-label phoneField-input"
+      " websiteField-label websiteField-input "
+      "apointmentField-label  apointmentField-input "
+      ". buttonControl";
+    justify-content: space-around;
+  }
+}
+
+/* Стили для средних десктопов */
+@media (min-width: 1280px) {
+  .formPage {
+    margin: 100px 100px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+  }
+  .grid-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 30px);
+    grid-template-areas:
+      "nameField-label nameField-input emailField-label emailField-input"
+      "phoneField-label phoneField-input websiteField-label websiteField-input "
+      "apointmentField-label  apointmentField-input . buttonControl";
+    justify-content: space-around;
+  }
+}
+
+/* Стили для больших десктопов */
+@media (min-width: 1920px) {
+  .formPage {
+    margin: 100px 100px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+  }
+  .grid-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 30px);
+    grid-template-areas:
+      "nameField-label nameField-input emailField-label emailField-input"
+      "phoneField-label phoneField-input websiteField-label websiteField-input "
+      "apointmentField-label  apointmentField-input . buttonControl";
+    justify-content: space-around;
+  }
+}
+
+.item-myPhoto-grid {
+  grid-area: myPhoto;
+}
+.item-myContactInfo-grid {
+  grid-area: myContactInfo;
+}
+.item-education-grid {
+  grid-area: myEducation;
+}
+.item-experience-grid {
+  grid-area: myExperience;
+}
+.item-languages-grid {
+  grid-area: myLanguages;
+}
+.item-skills-grid {
+  grid-area: mySkills;
+}
+
+.item-myPhoto-margin {
+  margin: 100px;
+}
+.item-myContactInfo-margin {
+  margin: 100px 50px;
+}
+
+/* первоначальний шаблон з якого я відталкувался*/
+.grid-CV-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "myPhoto  myContactInfo . ."
+    "myPhoto  myContactInfo . ."
+    "myEducation myEducation myEducation myEducation"
+    "myExperience myExperience myExperience myExperience"
+    "myLanguages myLanguages myLanguages myLanguages"
+    "mySkills mySkills mySkills mySkills";
+}
+
+/* Стили для мобильных телефонов */
+@media (max-width: 450px) {
+  .item-myPhoto-margin {
+    margin: 100px 40px 25px;
+  }
+  .item-myContactInfo-margin {
+    margin: 100px 20px;
+  }
+  .CVpage {
+    margin: 10px 30px;
+    padding: 10px;
+  }
+  .grid-CV-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "myPhoto  myContactInfo"
+      "myPhoto  myContactInfo"
+      "myEducation myEducation"
+      "myExperience myExperience"
+      "myLanguages myLanguages"
+      "mySkills mySkills ";
+  }
+}
+
+/* Стили для ландшафтной ориентации планшетов и малых десктопов */
+@media (min-width: 768px) {
+  .item-myPhoto-margin {
+    margin: 100px;
+  }
+  .item-myContactInfo-margin {
+    margin: 100px 50px;
+  }
+  .CVpage {
+    margin: 15px 50px;
+    padding: 10px;
+  }
+  .grid-CV-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "myPhoto  myContactInfo"
+      "myPhoto  myContactInfo"
+      "myEducation myEducation "
+      "myExperience myExperience"
+      "myLanguages myLanguages "
+      "mySkills mySkills ";
+  }
+}
+
+/* Стили для средних десктопов */
+@media (min-width: 1280px) {
+  .item-myPhoto-margin {
+    margin: 100px;
+  }
+  .item-myContactInfo-margin {
+    margin: 100px 50px;
+  }
+  .CVpage {
+    margin: 20px 100px;
+    padding: 20px;
+  }
+  .grid-CV-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "myPhoto  myContactInfo . ."
+      "myPhoto  myContactInfo . ."
+      "myEducation myEducation myEducation myEducation"
+      "myExperience myExperience myExperience myExperience"
+      "myLanguages myLanguages myLanguages myLanguages"
+      "mySkills mySkills mySkills mySkills";
+  }
+}
+
+/* Стили для больших десктопов */
+@media (min-width: 1920px) {
+  .item-myPhoto-margin {
+    margin: 100px;
+  }
+  .item-myContactInfo-margin {
+    margin: 100px 50px;
+  }
+  .CVpage {
+    margin: 20px 100px;
+    padding: 20px;
+  }
+  .grid-CV-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "myPhoto  myContactInfo . ."
+      "myPhoto  myContactInfo . ."
+      "myEducation myEducation myEducation myEducation"
+      "myExperience myExperience myExperience myExperience"
+      "myLanguages myLanguages myLanguages myLanguages"
+      "mySkills mySkills mySkills mySkills";
+  }
+}

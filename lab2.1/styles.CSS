@@ -1,0 +1,51 @@
+.clock {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: relative;
+  margin: 20px auto;
+}
+
+.hand {
+  width: 2px;
+  height: 50%;
+  background-color: #333;
+  position: absolute;
+  bottom: 1; /* Исправлено с top на bottom, чтобы элемент был в нижней части контейнера */
+  left: 50%; /* Оставляем как есть, чтобы выровнять стрелку по центру по горизонтали */
+  transform-origin: 50% 100%; /* Ось вращения теперь находится в нижней части стрелки */
+  animation: rotate 60s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.progress-bar-container {
+  margin: 150px;
+  background-color: #eee;
+  padding: 3px;
+  margin-top: 20px;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 20px;
+  background-color: #42ef32;
+  animation: fill 60s linear infinite;
+}
+
+@keyframes fill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Layout</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .block-1 {
+        background-color: #eea5a5;
+      } /* світло-червоний */
+      .block-2 {
+        background-color: #6cd46c;
+      } /* світло-зелений */
+      .block-3 {
+        background-color: #4343b8;
+      } /* світло-синій */
+      .block-4 {
+        background-color: #ea33cf;
+      } /* світло-жовтий */
+      .block-5 {
+        background-color: #ca923d;
+      } /* світло-жовтий */
+      .block-6 {
+        background-color: #33c5ea;
+      } /* світло-жовтий */
+      .block-7 {
+        background-color: #dd1b52;
+      } /* світло-жовтий */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Ряд 1: один блок -->
+      <div class="row mb-3 order-8 order-sm-1">
+        <div
+          class="col-12 border p-3 block-1 d-flex justify-content-center align-items-center"
+        >
+          Блок 1
+        </div>
+      </div>
+
+      <!-- Ряд 2: три блоки -->
+      <div class="row mb-3">
+        <div
+          class="col-12 col-md-4 border p-3 block-2 d-flex justify-content-center align-items-center"
+        >
+          Блок 2.1
+        </div>
+        <div
+          class="col-12 col-md-4 border p-3 block-3 d-flex justify-content-center align-items-center"
+        >
+          Блок 2.2
+        </div>
+        <div
+          class="col-12 col-md-4 border p-3 block-4 d-flex justify-content-center align-items-center"
+        >
+          Блок 2.3
+        </div>
+      </div>
+
+      <!-- Ряд 3: один блок на половину екрану, два блоки на другу половину -->
+      <div class="row mb-3">
+        <div
+          class="col-12 col-md-6 border p-3 block-5 d-flex justify-content-center align-items-center"
+        >
+          Блок 3.1
+        </div>
+        <div
+          class="col-6 col-md-3 border p-3 block-6 d-none d-sm-block d-flex justify-content-center align-items-center"
+        >
+          Блок 3.2
+        </div>
+        <div
+          class="col-6 col-md-3 border p-3 block-1 d-flex justify-content-center align-items-center"
+        >
+          Блок 3.3
+        </div>
+      </div>
+
+      <!-- Ряд 4: один блок -->
+      <div class="row mb-3 order-1 order-sm-8">
+        <div
+          class="col-12 border p-3 block-7 d-flex justify-content-center align-items-center"
+        >
+          Блок 4
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

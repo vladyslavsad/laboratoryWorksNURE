@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моя візитка</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="grid.CSS" />
+  </head>
+  <body>
+    <header>
+      <div class="navigeteMenu">
+        <nav>
+          <a style="color: aliceblue" href="#personal">Особиста інформація</a>
+          <a style="color: aliceblue" href="#education">Освіта</a>
+          <a style="color: aliceblue" href="#experience">Досвід роботи</a>
+          <a style="color: aliceblue" href="#languages">Знання мов</a>
+          <a style="color: aliceblue" href="#skills">Навички</a>
+          <a style="color: aliceblue" href="contactForm.HTML">Контакт</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="grid-CV-container">
+        <div class="item-myPhoto-grid item-myPhoto-margin">
+          <img
+            style="border-radius: 10px"
+            src="imgs\image.png"
+            alt="Ваше фото"
+          />
+        </div>
+        <div
+          class="item-myContactInfo-grid item-myContactInfo-margin"
+          id="personal"
+        >
+          <h1>Влад</h1>
+          <p>Контактна інформація:</p>
+          <dl>
+            <dt>4100, Ringsted</dt>
+            <dt>+45 91 92 88 20</dt>
+            <dt>slinicss@gmail.com</dt>
+          </dl>
+        </div>
+
+        <div class="CVpage item-education-grid" id="education">
+          <h2>Освіта</h2>
+          <dl>
+            <dt>Харківська гімназія N 172/dt></dt>
+            <dt>
+              Харківський Національний Університет Радіоелектроніки (перший
+              курс)
+            </dt>
+          </dl>
+        </div>
+        <div class="CVpage item-experience-grid" id="experience">
+          <h2>Досвід роботи</h2>
+          <dl>
+            <dt>Продуктовий магазин</dt>
+            <dt>Системний адміністратор</dt>
+            <dt>Будівництво</dt>
+          </dl>
+        </div>
+        <div class="CVpage item-languages-grid" id="languages">
+          <h2>Знання мов</h2>
+          <dl>
+            <dt>Українська</dt>
+            <dt>російська</dt>
+            <dt>Англійська</dt>
+          </dl>
+        </div>
+        <div class="CVpage item-skills-grid" id="skills">
+          <h2>Навички</h2>
+          <dl>
+            <dt>Мови програмування:C#,JavaScript,Phyton</dt>
+            <dt>Linux,SQL,Git</dt>
+            <dt>Навички роботи з мережами та мережевими приладами</dt>
+          </dl>
+        </div>
+      </div>
+      <div>
+        <a href="/contactForm.HTML" class="fixed-icon-link">
+          <img
+            src="imgs\imgonline-com-ua-Resize-qeW3ftBQ2ASZN.jpg"
+            alt="Иконка"
+          />
+        </a>
+      </div>
+    </main>
+    <div class="footerCV">
+      <p>&copy; 2024 Ваше Ім'я. Всі права захищені.</p>
+    </div>
+  </body>
+</html>

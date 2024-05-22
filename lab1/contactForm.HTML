@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакт</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navigeteMenu">
+        <nav>
+          <a style="color: aliceblue" href="index.html">Головна</a>
+          <a style="color: aliceblue" href>Контакт</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="formPage">
+        <h1>Контактна форма</h1>
+        <form>
+          <label for="name">Ім'я:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="phone">Телефон:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{10}"
+            required
+          />
+          <label for="meeting-time"
+            >Запропонуйте дату та час для зустрічі:</label
+          >
+          <input
+            type="datetime-local"
+            id="meeting-time"
+            name="meeting-time"
+            required
+          />
+          <label for="website">Ваш сайт:</label>
+          <input type="url" id="website" name="website" />
+          <input style="margin: 20px 0 0 0" type="submit" value="Відправити" />
+        </form>
+      </div>
+    </main>
+    <div class="footerForm">
+      <p>&copy; 2024 Ваше Ім'я. Всі права захищені.</p>
+    </div>
+  </body>
+</html>
