@@ -1,0 +1,1 @@
+this are my lab. works implemented by HTML,CSS,Bootstrap and JS, my 1.task was to make a CV page with contact form, 2. was to implemant diferent scripst in JS and 3. was to get to know Bootstar grid system
